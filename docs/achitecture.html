@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Getting Started</li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.</strong> Install</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Configure</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Examples</div></li><li class="chapter-item expanded affix "><li class="part-title">Core Concepts</li><li class="chapter-item expanded "><a href="achitecture.html" class="active"><strong aria-hidden="true">4.</strong> Architecture</a></li><li class="chapter-item expanded "><a href="networking/networking.html"><strong aria-hidden="true">5.</strong> Networking</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="networking/overlay_network.html"><strong aria-hidden="true">5.1.</strong> Overlay Network</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Computing</div></li><li class="chapter-item expanded "><a href="storage.html"><strong aria-hidden="true">7.</strong> Storage</a></li><li class="chapter-item expanded "><a href="token_economics.html"><strong aria-hidden="true">8.</strong> Token Economics</a></li><li class="chapter-item expanded "><a href="governance.html"><strong aria-hidden="true">9.</strong> Governance</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Getting Started</li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.</strong> Install</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Configure</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Examples</div></li><li class="chapter-item expanded affix "><li class="part-title">Core Concepts</li><li class="chapter-item expanded "><a href="achitecture.html" class="active"><strong aria-hidden="true">4.</strong> Architecture</a></li><li class="chapter-item expanded "><a href="networking/networking.html"><strong aria-hidden="true">5.</strong> Networking</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="networking/overlay_network.html"><strong aria-hidden="true">5.1.</strong> Overlay Network</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="networking/multilayer_networks.html"><strong aria-hidden="true">5.1.1.</strong> Multilayer Networks</a></li><li class="chapter-item expanded "><a href="networking/distributed_hash_tables.html"><strong aria-hidden="true">5.1.2.</strong> Distributed Hash Tables</a></li><li class="chapter-item expanded "><a href="networking/membership_protocols.html"><strong aria-hidden="true">5.1.3.</strong> Membership Protocols</a></li></ol></li><li class="chapter-item expanded "><a href="networking/peer_routing.html"><strong aria-hidden="true">5.2.</strong> Peer Routing</a></li><li class="chapter-item expanded "><a href="networking/message_dissemination.html"><strong aria-hidden="true">5.3.</strong> Message Dissemination</a></li></ol></li><li class="chapter-item expanded "><a href="storage.html"><strong aria-hidden="true">6.</strong> Storage</a></li><li class="chapter-item expanded "><a href="token_economics.html"><strong aria-hidden="true">7.</strong> Token Economics</a></li><li class="chapter-item expanded "><a href="governance.html"><strong aria-hidden="true">8.</strong> Governance</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -173,22 +173,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
