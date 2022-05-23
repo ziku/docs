@@ -16,6 +16,5 @@
 		- [Membership Protocols](./networking/membership_protocols.md)
 	- [Peer Routing](./networking/peer_routing.md)
 	- [Message Dissemination](./networking/message_dissemination.md)
-- [Storage](./storage.md)
 - [Token Economics](./token_economics.md)
 - [Governance](./governance.md)
